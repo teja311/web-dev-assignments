@@ -1,0 +1,36 @@
+<!--Create an input that reads from the data list through the select tag and display the data in the paragraph tag of HTML-->
+
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	  p {
+			color: red;
+		}
+	</style>
+  </head>
+  <body>
+    <label>Choose your studies</label>
+    <select id="studies">
+    	     <option>--select--</option>
+    	     <option>Btech</option>
+    	     <option>Degree</option>
+    	     <option>MBPS</option>
+    	     <option>Law student</option>
+    	     <option>Fashion Designing</option>
+    	     <option>Hotel Management</option>
+    </select>
+    <button onclick="readData()">submit</button>
+    <p id="result"></p>
+    <script>
+    	function readData() {
+    		var c=document.getElementById('studies').value;
+
+    		document.getElementById('result').innerHTML=c;
+    		
+    	}
+    </script>
+    </body>
+</html>
