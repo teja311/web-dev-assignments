@@ -1,0 +1,27 @@
+<!-- Create a simple subscription form which collects email id and store it in a database using HTML and PHP.-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Contact Form</title>
+		<style>
+			p {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Contact Form</h1>
+		<form action="/webdevbootcamp/db.php" method="POST" target="_blank">
+			<label style="color:red">Enter your name: </label>
+			<input type="text" id="name" name="name" />
+			<br/><br/>
+
+			<label style="color:red">Enter your email id: </label>
+			<input type="email" id="emailid" name="emailid" />
+			<br/><br/>
+			<input type="submit" />
+		</form>	
+	</body>
+</html>
